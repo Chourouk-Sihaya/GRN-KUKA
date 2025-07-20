@@ -2,8 +2,6 @@
 
 # Gene Regulatory Network for Robotic Grasping
 A bio-inspired approach for robot control (grasping) using Gene Regulatory Networks (GRNs). This system applies evolutionary optimization to evolve GRN-based controllers for KUKA robotic arm grasping tasks.
-
-# Overview
 This project introduces a new paradigm for robot control by mimicking biological gene regulatory mechanisms. The system uses gene expression dynamics to generate motor commands, providing a natural hierarchical control structure with inherent temporal processing capabilities.
 
 # Key Features
