@@ -26,7 +26,7 @@ pip install numpy torch torchvision matplotlib pillow
 pip install pybullet pybullet_envs
 pip install moviepy  # Optional, for video creation
 ```
-for Google Colab
+For Google Colab
 ```
 !pip install pybullet gymnasium pyvirtualdisplay moviepy opensimplex numpy matplotlib pillow scipy
 ```
