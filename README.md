@@ -26,8 +26,10 @@ pip install numpy torch torchvision matplotlib pillow
 pip install pybullet pybullet_envs
 pip install moviepy  # Optional, for video creation
 ```
-''' for Google Colab
+for Google Colab
+```
 !pip install pybullet gymnasium pyvirtualdisplay moviepy opensimplex numpy matplotlib pillow scipy
+```
 
 # PyBullet KUKA Environment
 The system requires the KUKA Diverse Object environment from PyBullet:
