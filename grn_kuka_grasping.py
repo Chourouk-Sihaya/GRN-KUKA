@@ -199,20 +199,9 @@ class GRNEvolutionaryOptimizer:
             genome = GRNGenome()
             genome.generation = 0
 
-            if i > 0:
-                if i % 4 == 0:
-                    genome.num_genes = random.randint(30, 70)
-                    genome.initialize_random_grn()
-                elif i % 4 == 1:
-                    genome.initialize_random_grn()
-                    sparsity = random.uniform(0.1, 0.4)
-                    mask = np.random.random(genome.regulatory_matrix.shape) < sparsity
-                    genome.regulatory_matrix *= mask
-                else:
-                    genome.initialize_random_grn()
-                    genome.activation_thresholds *= random.uniform(0.5, 2.0)
-                    genome.decay_rates *= random.uniform(0.5, 2.0)
-
+            np.random.seed(42 + i)
+            genome.initialize_random_grn()
+            
             self.population.append(genome)
 
     def evaluate_genome(self, genome: GRNGenome, env, episodes=5):
@@ -785,7 +774,7 @@ if __name__ == "__main__":
     results = run_grn_experiment(
         population_size=12,
         max_generations=15,
-        test_episodes=30,
+        test_episodes=40,
         create_video=True
     )
 
@@ -794,11 +783,4 @@ if __name__ == "__main__":
         print(f"Success rate: {results['test_results']['success_rate']:.1%}")
     else:
         print(f"Experiment failed: {results['error']}")
-
-
-    results = run_grn_experiment(
-         population_size=16,
-         max_generations=25,
-         test_episodes=40,
-         create_video=True
-     )
+    
