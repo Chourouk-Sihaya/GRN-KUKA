@@ -78,7 +78,14 @@ Each experiment generates:
 - `experiment_summary.json`: Summary statistics
 - `grn_demo.mp4`: Demonstration video with gene expression overlay
 
+## 📄 Publication
 
+If you use this code, please cite our paper:
+
+**Gene Regulatory Networks for Enhanced Vision-Based Robot Control: A Bio-Inspired Approach**  
+C. Guettas, F. Cherif, A. Muthanna, M. Hammoudeh, A. Laouid  
+*Sensors*, vol. 26, no. 6, p. 1742, 2026.  
+[![DOI](https://img.shields.io/badge/DOI-10.3390%2Fs26061742-blue)](https://doi.org/10.3390/s26061742)
 
 ## Contact
 
